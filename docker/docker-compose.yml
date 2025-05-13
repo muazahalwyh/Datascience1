@@ -1,0 +1,104 @@
+version: '3.8'
+
+services:
+  metabase:
+    image: metabase/metabase
+    container_name: c9cf13c6d71180894342a6e4eaace3a8922f45c6b7c9f659d5f3cddbf2e8f062
+    ports:
+      - "3000:3000"
+    volumes:
+      - metabase-data:/metabase-data
+    environment:
+      - MB_DB_FILE=/metabase-data/metabase.db
+
+volumes:
+  metabase-data:
+
+
+
+
+
+# # services:
+# #   metabase:
+# #     image: metabase/metabase
+# #     ports:
+# #       - "3000:3000"
+# #     volumes:
+# #       - ./database:/app/database
+
+# # version: '3'
+# # services:
+# #   metabase:
+# #     image: metabase/metabase
+# #     container_name: metabase
+# #     ports:
+# #       - "3000:3000"
+# #     volumes:
+# #       - ./database:/app/database
+# #     environment:
+# #       - MB_DB_FILE=/app/hasil_prediksi.db
+
+# version: '3.8'
+
+# services:
+#   postgres:
+#     image: postgres:15
+#     container_name: postgres
+#     environment:
+#       POSTGRES_DB: hasil_prediksi_db
+#       POSTGRES_USER: root
+#       POSTGRES_PASSWORD: root123
+#     ports:
+#       - "5432:5432"
+#     volumes:
+#       - pg_data:/var/lib/postgresql/data
+
+#   metabase:
+#     image: metabase/metabase
+#     container_name: metabase
+#     ports:
+#       - "3000:3000"
+#     depends_on:
+#       - postgres
+
+# volumes:
+#   pg_data:
+
+
+# services:
+#   metabase:
+#     image: metabase/metabase:latest
+#     container_name: metabase
+#     hostname: metabase
+#     volumes:
+#       - /dev/urandom:/dev/random:ro
+#     ports:
+#       - 3000:3000
+#     environment:
+#       MB_DB_TYPE: postgres
+#       MB_DB_DBNAME: metabaseappdb
+#       MB_DB_PORT: 5432
+#       MB_DB_USER: metabase
+#       MB_DB_PASS: mysecretpassword
+#       MB_DB_HOST: postgres
+#     networks:
+#       - metanet1
+#     healthcheck:
+#       test: curl --fail -I http://localhost:3000/api/health || exit 1
+#       interval: 15s
+#       timeout: 5s
+#       retries: 5
+#   postgres:
+#     image: postgres:latest
+#     container_name: postgres
+#     hostname: postgres
+#     environment:
+#       POSTGRES_USER: metabase
+#       POSTGRES_DB: metabaseappdb
+#       POSTGRES_PASSWORD: mysecretpassword
+#     networks:
+#       - metanet1
+# networks:
+#   metanet1:
+#     driver: bridge
+
