@@ -44,9 +44,7 @@ print("Hasil prediksi telah disimpan ke 'hasil_prediksi.csv'")
 
 # 2. Koneksi ke Supabase PostgreSQL
 engine = create_engine(
-    # 'postgresql://postgres:roots12345!kita@db.gxjbqjsfkmssgqedesbk.supabase.co:5432/postgres',
-    # postgresql://postgres.gxjbqjsfkmssgqedesbk:[YOUR-PASSWORD]@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres
-    'postgresql://postgres.gxjbqjsfkmssgqedesbk:roots12345!kita@aws-0-ap-southeast-1.pooler.supabase.com:5432/postgres',
+    'postgresql://postgres.gxjbqjsfkmssgqedesbk:roots12345!kita@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres',
     connect_args={"sslmode": "require"}
 )
 

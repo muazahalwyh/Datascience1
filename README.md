@@ -147,8 +147,8 @@ Dashboard yang dikembangkan mencakup:
 - Filter interaktif berdasarkan jabatan, departemen, dan usia.
 - Visualisasi faktor-faktor signifikan seperti Monthly Income, Total Working Years, dan YearsAtCompany.
 
-Link Dashboard (Metabase): [Dashboard](images/dashboard.png)<br>
-Link Aplikasi Prediksi (Streamlit): [Dashboard Streamlit](https://datascience1-dspuqjsimzebniswhhagkl.streamlit.app/)
+Link Dashboard (Metabase): [Dashboard Metabase](http://localhost:3000/public/dashboard/cc9a4959-3cbd-49e3-9911-12d19293964f)<br>
+Link Aplikasi Prediksi (Streamlit): [Dashboard Streamlit](https://datascience1-scmjkwwehxnges9qsqcg7r.streamlit.app/)
 
 ## Conclusion
 
