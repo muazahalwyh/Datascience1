@@ -140,12 +140,14 @@ Setup environment:
 
 Jelaskan tentang business dashboard yang telah dibuat. Jika ada, sertakan juga link untuk mengakses dashboard tersebut.
 
+![Dashboard](images/muazahaladawiyah-dashboard.png)
+
 Dashboard yang dikembangkan mencakup:
 - Distribusi karyawan keluar dan bertahan.
 - Filter interaktif berdasarkan jabatan, departemen, dan usia.
 - Visualisasi faktor-faktor signifikan seperti Monthly Income, Total Working Years, dan YearsAtCompany.
 
-Dashboard (Metabase): [Dashboard](images/dashboard.png)<br>
+Link Dashboard (Metabase): [Dashboard](images/dashboard.png)<br>
 Link Aplikasi Prediksi (Streamlit): [Dashboard Streamlit](https://datascience1-dspuqjsimzebniswhhagkl.streamlit.app/)
 
 ## Conclusion

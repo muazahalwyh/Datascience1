@@ -45,7 +45,7 @@ def load_data():
 df = load_data()
 
 # Sidebar - Filter Section
-st.sidebar.header("🔍 Filter Data")
+st.sidebar.header(" Filter Data")
 
 # Usia
 age_filter = st.sidebar.slider(
@@ -94,7 +94,7 @@ if not filtered_df.empty:
 
     selected_data = filtered_df[filtered_df['EmployeeId'] == selected_id]
 
-    st.subheader("🧍‍♀️ Detail Karyawan Terpilih")
+    st.subheader(" Detail Karyawan Terpilih")
     st.write(selected_data.drop(columns=["PredictedAttrition"]))
 
     label = selected_data['PredictedAttritionLabel'].values[0]
