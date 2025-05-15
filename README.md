@@ -138,9 +138,7 @@ Setup environment:
         ```
 ## Business Dashboard
 
-Jelaskan tentang business dashboard yang telah dibuat. Jika ada, sertakan juga link untuk mengakses dashboard tersebut.
-
-![Dashboard](images/muazahaladawiyah-dashboard.png)
+![Dashboard](images/Muazahaladawiyah-dashboard.png)
 
 Dashboard yang dikembangkan mencakup:
 - Distribusi karyawan keluar dan bertahan.
