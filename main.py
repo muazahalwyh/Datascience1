@@ -15,15 +15,6 @@ HOST = os.getenv("HOST")
 PORT = os.getenv("PORT")
 DBNAME = os.getenv("DBNAME")
 
-# Print the connection parameters for debugging
-print(f"USER: {USER}, PASSWORD: {PASSWORD}, HOST: {HOST}, PORT: {PORT}, DBNAME: {DBNAME}")
-
-# Ensure PORT is an integer
-try:
-    PORT = int(PORT)
-except ValueError:
-    raise ValueError("PORT must be an integer.")
-
 # Construct connection string
 DATABASE_URL = f"postgresql+psycopg2://{USER}:{PASSWORD}@{HOST}:{PORT}/{DBNAME}?sslmode=require"
 
