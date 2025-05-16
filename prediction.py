@@ -2,6 +2,18 @@ import pandas as pd
 import numpy as np
 import joblib
 from sqlalchemy import create_engine
+from dotenv import load_dotenv
+import os
+
+# Load environment variables from .env
+load_dotenv()
+
+# Fetch variables
+USER = os.getenv("user")
+PASSWORD = os.getenv("password")
+HOST = os.getenv("host")
+PORT = os.getenv("port")
+DBNAME = os.getenv("dbname")
 
 # Load model, preprocessor, dan label encoder (jika pakai)
 model = joblib.load('model/random_forest.pkl')
@@ -43,10 +55,11 @@ df_new.to_csv('dataset/hasil_prediksi.csv', index=False)
 print("Hasil prediksi telah disimpan ke 'hasil_prediksi.csv'")
 
 # 2. Koneksi ke Supabase PostgreSQL
-engine = create_engine(
-    'postgresql://postgres.gxjbqjsfkmssgqedesbk:roots12345!kita@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres',
-    connect_args={"sslmode": "require"}
-)
+# Construct connection string
+DATABASE_URL = f"postgresql+psycopg2://{USER}:{PASSWORD}@{HOST}:{PORT}/{DBNAME}?sslmode=require"
+
+# Create the SQLAlchemy engine
+engine = create_engine(DATABASE_URL)
 
 # Simpan ke tabel
 df_new.to_sql('hasil_prediksi', engine, if_exists='replace', index=False)
