@@ -29,7 +29,7 @@ except Exception as e:
 
     
 # --- Streamlit App ---
-st.title(" Dashboard Analisis Attrition dari Supabase")
+st.title(" Mu'azah Al'Adawiyah - Dashboard Analisis Employee Attrition")
 
 # Query to read data
 @st.cache_data(ttl=300)

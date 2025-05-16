@@ -113,8 +113,14 @@ Setup environment:
         ```
         docker run -d -p 3000:3000 --name metabase metabase/metabase
         ```
+        ```
+        docker-compose up -d
+        ```
+    - Cek log container untuk memastikan metabase berhasil
+        ```
+        docker logs c9cf13c6d7118
+        ```
         akan muncul : [Browser](http://localhost:3000)
-- Menjalankan Stremlit
 
 - Mengaktifkan dan Menonaktifkan Layanan dengan Docker
     - Menjalankan Docker Containers
@@ -127,6 +133,7 @@ Setup environment:
             ```
             docker stop metabase
             ```
+    
     - Menghapus Docker Containers setelah selesai
         - Metabase : 
             ```
@@ -142,15 +149,15 @@ Setup environment:
 
 Dashboard yang dikembangkan mencakup:
 - Distribusi karyawan keluar dan bertahan.
-- Filter interaktif berdasarkan jabatan, departemen, dan usia.
-- Visualisasi faktor-faktor signifikan seperti Monthly Income, Total Working Years, dan YearsAtCompany.
+- Filter interaktif berdasarkan jabatan, departemen, dan usia.<br>
+    Dimana dengan adanya filter ini kita bisa melihat karyawan yang akan resign sesuai jabatan maupun departemen. dan kita juga bisa melihat detail karyawan tersebut.
+- Visualisasi faktor-faktor signifikan seperti Monthly Income, Total Working Years, dan YearsAtCompany. <br>
+    Kita bisa melihat persentase dan hubungan antara faktor yang mempengaruhi karyawan tersebut resign dengan menganalisa visualisasi yang ada.
 
-Link Dashboard (Metabase): [Dashboard Metabase](http://localhost:3000/public/dashboard/cc9a4959-3cbd-49e3-9911-12d19293964f)<br>
-Link Aplikasi Prediksi (Streamlit): [Dashboard Streamlit](https://datascience1-scmjkwwehxnges9qsqcg7r.streamlit.app/)
+Link Dashboard (Metabase): [Dashboard Metabase](http://localhost:3000/public/dashboard/e0b4c229-d46f-4f02-b5df-9a8d364cc3d5)<br>
+Link Aplikasi Prediksi (Streamlit): [Dashboard Streamlit](https://datascience1-zncw9kwsqtthb5qb69kftz.streamlit.app/)
 
 ## Conclusion
-
-Jelaskan konklusi dari proyek yang dikerjakan.
 
 Berdasarkan hasil eksplorasi data dan pemodelan yang telah dilakukan terhadap data karyawan PT Jaya Jaya Maju, dapat disimpulkan bahwa:
 - Tingkat attrition (resign) karyawan di perusahaan cukup signifikan dan perlu perhatian khusus dari divisi HR.
