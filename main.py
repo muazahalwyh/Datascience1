@@ -35,6 +35,7 @@ try:
         print("Connection successful!")
 except Exception as e:
     print(f"Failed to connect: {e}")
+
     
 # --- Streamlit App ---
 st.title(" Dashboard Analisis Attrition dari Supabase")

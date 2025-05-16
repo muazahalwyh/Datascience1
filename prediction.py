@@ -9,11 +9,11 @@ import os
 load_dotenv()
 
 # Fetch variables
-USER = os.getenv("user")
-PASSWORD = os.getenv("password")
-HOST = os.getenv("host")
-PORT = os.getenv("port")
-DBNAME = os.getenv("dbname")
+USER = os.getenv("USER")
+PASSWORD = os.getenv("PASSWORD")
+HOST = os.getenv("HOST")
+PORT = os.getenv("PORT")
+DBNAME = os.getenv("DBNAME")
 
 # Load model, preprocessor, dan label encoder (jika pakai)
 model = joblib.load('model/random_forest.pkl')
