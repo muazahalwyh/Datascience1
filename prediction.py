@@ -34,7 +34,7 @@ y_pred = model.predict(X_new)
 df_new['PredictedAttrition'] = y_pred
 
 # Mapping ke Yes/No
-df_new['PredictedAttritionLabel'] = df_new['PredictedAttrition'].map({0: 'Yes', 1: 'No'})
+df_new['PredictedAttritionLabel'] = df_new['PredictedAttrition'].map({0: 'No Resign', 1: 'Resign'})
 
 # Daftar kolom yang di-log1p
 skewed_cols = [

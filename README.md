@@ -36,7 +36,7 @@ Data diambil dari Dataset internal dari Jaya Jaya Maju terkait informasi demogra
 
 Berikut penjelasan mengenai fitur yang akan diambil : 
 * **EmployeeId** - Employee Identifier
-* **Attrition** - Did the employee attrition? (0=yes, 1=no)
+* **Attrition** - Did the employee attrition? (0=No, 1=Yes)
 * **Age** - Age of the employee
 * **BusinessTravel** - Travel commitments for the job
 * **DailyRate** - Daily salary
@@ -114,26 +114,29 @@ Setup environment:
         docker run -d -p 3000:3000 --name metabase metabase/metabase
         ```
         ```
-        docker-compose up -d
+        docker-compose up -d / docker-compose start
         ```
     - Cek log container untuk memastikan metabase berhasil
         ```
         docker logs c9cf13c6d7118
         ```
-        akan muncul : [Browser](http://localhost:3000)
+    - Cek container yang sedang berjalan
+        ```
+        docker ps
+        ```
+        akan muncul : [Browser](http://localhost:3001), tunggu sekitar 1/2 menit refresh
+    - Akun Sign in to Metabase
+        ```
+        username = root@mail.com
+        password = roots12345
+        ```
 
-- Mengaktifkan dan Menonaktifkan Layanan dengan Docker
-    - Menjalankan Docker Containers
-        - Metabase : 
-            ```
-            docker start metabase
-            ```
+- Menonaktifkan Layanan dengan Docker
     - Menghentikan Docker Containers
         - Metabase : 
             ```
-            docker stop metabase
+            docker-compose stop
             ```
-    
     - Menghapus Docker Containers setelah selesai
         - Metabase : 
             ```
@@ -149,12 +152,12 @@ Setup environment:
 
 Dashboard yang dikembangkan mencakup:
 - Distribusi karyawan keluar dan bertahan.
-- Filter interaktif berdasarkan jabatan, departemen, dan usia.<br>
+- Filter interaktif berdasarkan jabatan, departemen, dan usia pada website streamlit<br>
     Dimana dengan adanya filter ini kita bisa melihat karyawan yang akan resign sesuai jabatan maupun departemen. dan kita juga bisa melihat detail karyawan tersebut.
 - Visualisasi faktor-faktor signifikan seperti Monthly Income, Total Working Years, dan YearsAtCompany. <br>
     Kita bisa melihat persentase dan hubungan antara faktor yang mempengaruhi karyawan tersebut resign dengan menganalisa visualisasi yang ada.
 
-Link Dashboard (Metabase): [Dashboard Metabase](http://localhost:3000/public/dashboard/e0b4c229-d46f-4f02-b5df-9a8d364cc3d5)<br>
+Link Dashboard (Metabase): [Dashboard Metabase](http://localhost:3001/public/dashboard/e0b4c229-d46f-4f02-b5df-9a8d364cc3d5)<br>
 Link Aplikasi Prediksi (Streamlit): [Dashboard Streamlit](https://datascience1-zncw9kwsqtthb5qb69kftz.streamlit.app/)
 
 ## Conclusion
