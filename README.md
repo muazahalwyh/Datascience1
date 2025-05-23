@@ -5,29 +5,34 @@ Jaya Jaya Maju merupakan salah satu perusahaan multinasional yang telah berdiri 
 
 Seiring pertumbuhan bisnisnya, perusahaan menghadapi tantangan besar dalam mempertahankan karyawan. Perusahaan Jaya Jaya Maju ini masih cukup kesulitan dalam mengelola karyawan. Hal ini berimbas tingginya attrition rate (rasio jumlah karyawan yang keluar dengan total karyawan keseluruhan) hingga lebih dari 10%.
 
-Tingginya tingkat attrition (pengunduran diri karyawan) mengakibatkan tingginya biaya rekrutmen dan pelatihan, serta terganggunya stabilitas tim dan produktivitas organisasi. Sehingga perusahaan perlu melakukan analisa untuk mengidentifikasi berbagai faktor yang mempengaruhi tingginya attrition rate tersebut.
+Tingginya tingkat attrition (pengunduran diri karyawan) mengakibatkan tingginya biaya rekrutmen dan pelatihan, produktivitas tim yang menurun karena kehilangan tenaga kerja yang berpengalaman, serta terganggunya stabilitas tim dan produktivitas organisasi. 
+
+Oleh karena itu, perusahaan perlu melakukan analisa untuk mengidentifikasi berbagai faktor yang mempengaruhi tingginya attrition rate tersebut dan memprediksi kemukinan terjadinya karyawan mengundurkan diri secara proaktif. Dengan memanfaatkan data historis karyawan dan menerapkan model machine learning, diharapkan dapat memberikan solusi yang efektif dan strategis dalam mengatasi permasalahan tersebut dan menjadi pengambilan keputusan HR dalam meningkatkan kualitas lingkungan kerja dan mengurangi risiko kehilangan talenta terbaik di perusahaan.
 
 ### Permasalahan Bisnis
-Tujuan:
-- Mengidentifikasi faktor-faktor yang memengaruhi attrition rate karyawan di Jaya Jaya Maju.
-- Menyediakan dashboard interaktif agar HR dapat memantau kondisi tenaga kerja secara real-time.
+Perusahaan Jaya Jaya Maju menghadapi beberapa tantangan nyata dalam pengelolaan karyawan, antara lain:
+- Manajemen HR kesulitan dalam mengidentifikasi faktor utama penyebab pengunduran diri karyawan. Tidak adanya pemahaman menyeluruh tentang faktor internal atau eksternal yang berkontribusi terhadap attrition menyulitkan HR dalam merancang strategi retensi yang efektif.
+- Pengelolaan karyawan yang belum optimal, sehingga HR kesulitan dalam menjaga keterlibatan dan kepuasan kerja karyawan. Hal ini menyebabkan menurunnya motivasi dan berujung pada keputusan pengunduran diri.
+- Pengambilan keputusan HR masih bersifat reaktif dan intuitif. Tanpa dukungan data dan analitik, intervensi yang dilakukan tidak selalu tepat sasaran, sehingga meningkatkan risiko kehilangan karyawan potensial dan berbakat.
+- Sistem informasi HR yang masih terbatas menghambat transparansi data terkait kinerja dan kepuasan karyawan, sehingga strategi pengembangan dan retensi karyawan kurang tepat sasaran.
+- Belum tersedia sistem pemantauan yang terintegrasi, efisien, dan real-time untuk mengevaluasi kesejahteraan, beban kerja, serta perkembangan karier karyawan secara menyeluruh. Kondisi ini menyulitkan HR dalam mendeteksi dan mengambil tindakan preventif terhadap risiko penurunan motivasi dan potensi pengunduran diri karyawan secara dini.
 
-Problem Statements:
-- Apa saja faktor signifikan yang mendorong keputusan karyawan untuk keluar dari perusahaan?
-- Bagaimana persebaran attrition di berbagai divisi, usia, jabatan, dan tingkat gaji?
-- Bagaimana visualisasi data dapat membantu HR dalam mendeteksi area berisiko tinggi attrition?
+Tujuan:
+- Mengidentifikasi faktor-faktor yang secara signifikan memengaruhi keputusan karyawan untuk keluar dari perusahaan Jaya Jaya Maju.
+- Mengembangkan model prediktif untuk mengidentifikasi karyawan dengan risiko tinggi attrition.
+- Menyediakan dashboard interaktif agar digunakan HR untuk memantau kondisi tenaga kerja secara real-time dan menjadi pengambilan keputusan berbasis data.
 
 Seluruh Permasalahan Bisnis yang Diselesaikan (Goals):
-- Memprediksi karyawan mana yang memiliki potensi resign.
-- Menyajikan data visual tentang faktor-faktor risiko seperti usia, gaji, masa kerja, dan jenjang karir.
-- Memberikan rekomendasi tindakan preventif berdasarkan hasil analisis data.
+- Memprediksi karyawan yang memiliki potensi untuk mengundurkan diri (resign) secara lebih akurat.
+- Menyajikan visualisasi data yang menggambarkan faktor-faktor risiko utama seperti usia, gaji, masa kerja, dan jenjang karir yang berpengaruh terhadap keputusan resign.
+- Memberikan rekomendasi tindakan preventif yang tepat berdasarkan hasil analisis data untuk meningkatkan retensi karyawan.
 
 ### Cakupan Proyek
 - Eksplorasi dan pembersihan data HR karyawan.
 - Transformasi data (handling missing values, outliers, encoding, scaling, log transformasi untuk fitur skewed).
 - Pemodelan prediksi attrition menggunakan beberapa model ML (Logistic Regression, Decision Tree, Random Forest, XGBoost, dan Neural Network).
-- Evaluasi performa model dengan metrik klasifikasi.
-- Visualisasi hasil prediksi dalam bentuk dashboard menggunakan Metabase dan Streamlit.
+- Evaluasi model dengan metrik klasifikasi seperti accuracy, precision, recall, dan F1-score.
+- Integrasi hasil analisis ke dalam dashboard interaktif menggunakan Metabase dan Streamlit sebagai alat bantu pengambilan keputusan.
 
 ### Persiapan
 
